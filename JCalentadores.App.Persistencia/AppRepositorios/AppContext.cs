@@ -9,13 +9,16 @@ namespace JCalentadores.App.Persistencia
         public DbSet<CitasServicios> CitaServicio {get;set;}
         public DbSet<Servicios> Servicio {get;set;}
         public DbSet<Usuarios> Usuario {get;set;}
+        public DbSet<Cliente> Clientes {get;set;}
+        public DbSet<Historial> HistorialCitas {get;set;}
+        public DbSet<Tecnico> Tecnicos {get;set;}
         protected override void OnConfiguring (DbContextOptionsBuilder optionsBuilder)
         {
             if(!optionsBuilder.IsConfigured)
             {
 
                 optionsBuilder
-                .UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = JCalentadoresData");
+                .UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = JCalentadoresData1");
 
             }
 

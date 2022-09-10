@@ -15,7 +15,7 @@ namespace JCalentadores.App.Persistencia.Migrations
                 {
                     id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    nombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    nombreServicio = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     precio = table.Column<float>(type: "real", nullable: false)
                 },
                 constraints: table =>
@@ -31,8 +31,19 @@ namespace JCalentadores.App.Persistencia.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     nombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     apellido = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    cedula = table.Column<int>(type: "int", nullable: false),
                     email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    telefono = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    telefono = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    direccion = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    nit = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    admin = table.Column<bool>(type: "bit", nullable: false),
+                    confirmado = table.Column<bool>(type: "bit", nullable: false),
+                    token = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Discriminator = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    metodoPago = table.Column<int>(type: "int", nullable: true),
+                    tipoPersona = table.Column<int>(type: "int", nullable: true),
+                    numeroRegistro = table.Column<int>(type: "int", nullable: true),
+                    horarioTecnico = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -54,6 +65,25 @@ namespace JCalentadores.App.Persistencia.Migrations
                     table.ForeignKey(
                         name: "FK_Cita_Usuario_UsuarioIdid",
                         column: x => x.UsuarioIdid,
+                        principalTable: "Usuario",
+                        principalColumn: "id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "HistorialCitas",
+                columns: table => new
+                {
+                    id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    idUsuarioid = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_HistorialCitas", x => x.id);
+                    table.ForeignKey(
+                        name: "FK_HistorialCitas_Usuario_idUsuarioid",
+                        column: x => x.idUsuarioid,
                         principalTable: "Usuario",
                         principalColumn: "id",
                         onDelete: ReferentialAction.Cascade);
@@ -99,12 +129,20 @@ namespace JCalentadores.App.Persistencia.Migrations
                 name: "IX_CitaServicio_servicioIdid",
                 table: "CitaServicio",
                 column: "servicioIdid");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_HistorialCitas_idUsuarioid",
+                table: "HistorialCitas",
+                column: "idUsuarioid");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
                 name: "CitaServicio");
+
+            migrationBuilder.DropTable(
+                name: "HistorialCitas");
 
             migrationBuilder.DropTable(
                 name: "Cita");

@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "JCalentadores.App.Consola/1.0.0": {
         "dependencies": {
+          "JCalentadores.App.Dominio": "1.0.0",
           "JCalentadores.App.Persistencia": "1.0.0"
         },
         "runtime": {

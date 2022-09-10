@@ -2044,6 +2044,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "JCalentadores.App.Dominio >= 1.0.0",
       "JCalentadores.App.Persistencia >= 1.0.0"
     ]
   },
@@ -2072,6 +2073,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\C#\\Proyecto\\JCalentadores.App\\JCalentadores.App\\JCalentadores.App.Dominio\\JCalentadores.App.Dominio.csproj": {
+              "projectPath": "C:\\C#\\Proyecto\\JCalentadores.App\\JCalentadores.App\\JCalentadores.App.Dominio\\JCalentadores.App.Dominio.csproj"
+            },
             "C:\\C#\\Proyecto\\JCalentadores.App\\JCalentadores.App\\JCalentadores.App.Persistencia\\JCalentadores.App.Persistencia.csproj": {
               "projectPath": "C:\\C#\\Proyecto\\JCalentadores.App\\JCalentadores.App\\JCalentadores.App.Persistencia\\JCalentadores.App.Persistencia.csproj"
             }
