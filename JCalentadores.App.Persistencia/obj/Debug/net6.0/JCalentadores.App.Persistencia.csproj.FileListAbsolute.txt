@@ -1,0 +1,17 @@
+C:\C#\Proyecto\JCalentadores.App\JCalentadores.App\JCalentadores.App.Persistencia\bin\Debug\net6.0\JCalentadores.App.Persistencia.deps.json
+C:\C#\Proyecto\JCalentadores.App\JCalentadores.App\JCalentadores.App.Persistencia\bin\Debug\net6.0\JCalentadores.App.Persistencia.runtimeconfig.json
+C:\C#\Proyecto\JCalentadores.App\JCalentadores.App\JCalentadores.App.Persistencia\bin\Debug\net6.0\JCalentadores.App.Persistencia.dll
+C:\C#\Proyecto\JCalentadores.App\JCalentadores.App\JCalentadores.App.Persistencia\bin\Debug\net6.0\JCalentadores.App.Persistencia.pdb
+C:\C#\Proyecto\JCalentadores.App\JCalentadores.App\JCalentadores.App.Persistencia\bin\Debug\net6.0\JCalentadores.App.Dominio.dll
+C:\C#\Proyecto\JCalentadores.App\JCalentadores.App\JCalentadores.App.Persistencia\bin\Debug\net6.0\JCalentadores.App.Dominio.pdb
+C:\C#\Proyecto\JCalentadores.App\JCalentadores.App\JCalentadores.App.Persistencia\obj\Debug\net6.0\JCalentadores.App.Persistencia.csproj.AssemblyReference.cache
+C:\C#\Proyecto\JCalentadores.App\JCalentadores.App\JCalentadores.App.Persistencia\obj\Debug\net6.0\JCalentadores.App.Persistencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\C#\Proyecto\JCalentadores.App\JCalentadores.App\JCalentadores.App.Persistencia\obj\Debug\net6.0\JCalentadores.App.Persistencia.AssemblyInfoInputs.cache
+C:\C#\Proyecto\JCalentadores.App\JCalentadores.App\JCalentadores.App.Persistencia\obj\Debug\net6.0\JCalentadores.App.Persistencia.AssemblyInfo.cs
+C:\C#\Proyecto\JCalentadores.App\JCalentadores.App\JCalentadores.App.Persistencia\obj\Debug\net6.0\JCalentadores.App.Persistencia.csproj.CoreCompileInputs.cache
+C:\C#\Proyecto\JCalentadores.App\JCalentadores.App\JCalentadores.App.Persistencia\obj\Debug\net6.0\JCalentadores.App.Persistencia.csproj.CopyComplete
+C:\C#\Proyecto\JCalentadores.App\JCalentadores.App\JCalentadores.App.Persistencia\obj\Debug\net6.0\JCalentadores.App.Persistencia.dll
+C:\C#\Proyecto\JCalentadores.App\JCalentadores.App\JCalentadores.App.Persistencia\obj\Debug\net6.0\refint\JCalentadores.App.Persistencia.dll
+C:\C#\Proyecto\JCalentadores.App\JCalentadores.App\JCalentadores.App.Persistencia\obj\Debug\net6.0\JCalentadores.App.Persistencia.pdb
+C:\C#\Proyecto\JCalentadores.App\JCalentadores.App\JCalentadores.App.Persistencia\obj\Debug\net6.0\JCalentadores.App.Persistencia.genruntimeconfig.cache
+C:\C#\Proyecto\JCalentadores.App\JCalentadores.App\JCalentadores.App.Persistencia\obj\Debug\net6.0\ref\JCalentadores.App.Persistencia.dll
