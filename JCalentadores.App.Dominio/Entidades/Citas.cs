@@ -4,8 +4,9 @@ namespace JCalentadores.App.Dominio
 public class Citas
 {
     public int id {get;set;}
-    public DateTime fechaHora{get;set;}
-    public Usuarios UsuarioId{get;set;}
+    public DateTime fecha{get;set;}
+    public DateTime hora{get;set;}
+    
 
 }
 }

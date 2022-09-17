@@ -12,5 +12,10 @@ public class Usuarios
     public Boolean admin {get;set;}
     public Boolean confirmado {get;set;}
     public string token {get;set;}
-    
+    public string tipoUsuario {get;set;}
+    public int numeroRegistro {get;set;}
+    public DateTime horario {get;set;}
+    public int metodoPago {get;set;}
+    public int tipoPersona {get;set;}
+   
 }

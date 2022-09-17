@@ -48,15 +48,13 @@ namespace JCalentadores.App.Persistencia.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"), 1L, 1);
 
-                    b.Property<int>("UsuarioIdid")
-                        .HasColumnType("int");
+                    b.Property<DateTime>("fecha")
+                        .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("fechaHora")
+                    b.Property<DateTime>("hora")
                         .HasColumnType("datetime2");
 
                     b.HasKey("id");
-
-                    b.HasIndex("UsuarioIdid");
 
                     b.ToTable("Cita");
                 });
@@ -69,15 +67,13 @@ namespace JCalentadores.App.Persistencia.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"), 1L, 1);
 
-                    b.Property<int>("citaIdid")
+                    b.Property<int>("citaId")
                         .HasColumnType("int");
 
                     b.Property<int>("servicioIdid")
                         .HasColumnType("int");
 
                     b.HasKey("id");
-
-                    b.HasIndex("citaIdid");
 
                     b.HasIndex("servicioIdid");
 
@@ -112,10 +108,6 @@ namespace JCalentadores.App.Persistencia.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"), 1L, 1);
 
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<bool>("admin")
                         .HasColumnType("bit");
 
@@ -137,6 +129,12 @@ namespace JCalentadores.App.Persistencia.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime>("horario")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("metodoPago")
+                        .HasColumnType("int");
+
                     b.Property<string>("nit")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -145,7 +143,17 @@ namespace JCalentadores.App.Persistencia.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("numeroRegistro")
+                        .HasColumnType("int");
+
                     b.Property<string>("telefono")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("tipoPersona")
+                        .HasColumnType("int");
+
+                    b.Property<string>("tipoUsuario")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -156,34 +164,6 @@ namespace JCalentadores.App.Persistencia.Migrations
                     b.HasKey("id");
 
                     b.ToTable("Usuario");
-
-                    b.HasDiscriminator<string>("Discriminator").HasValue("Usuarios");
-                });
-
-            modelBuilder.Entity("Cliente", b =>
-                {
-                    b.HasBaseType("Usuarios");
-
-                    b.Property<int>("metodoPago")
-                        .HasColumnType("int");
-
-                    b.Property<int>("tipoPersona")
-                        .HasColumnType("int");
-
-                    b.HasDiscriminator().HasValue("Cliente");
-                });
-
-            modelBuilder.Entity("Tecnico", b =>
-                {
-                    b.HasBaseType("Usuarios");
-
-                    b.Property<DateTime>("horarioTecnico")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("numeroRegistro")
-                        .HasColumnType("int");
-
-                    b.HasDiscriminator().HasValue("Tecnico");
                 });
 
             modelBuilder.Entity("Historial", b =>
@@ -197,32 +177,13 @@ namespace JCalentadores.App.Persistencia.Migrations
                     b.Navigation("idUsuario");
                 });
 
-            modelBuilder.Entity("JCalentadores.App.Dominio.Citas", b =>
-                {
-                    b.HasOne("Usuarios", "UsuarioId")
-                        .WithMany()
-                        .HasForeignKey("UsuarioIdid")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("UsuarioId");
-                });
-
             modelBuilder.Entity("JCalentadores.App.Dominio.CitasServicios", b =>
                 {
-                    b.HasOne("JCalentadores.App.Dominio.Citas", "citaId")
-                        .WithMany()
-                        .HasForeignKey("citaIdid")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("Servicios", "servicioId")
                         .WithMany()
                         .HasForeignKey("servicioIdid")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("citaId");
 
                     b.Navigation("servicioId");
                 });
