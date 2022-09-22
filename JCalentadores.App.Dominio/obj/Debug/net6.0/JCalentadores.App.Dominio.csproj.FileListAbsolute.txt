@@ -1,3 +1,15 @@
+C:\C#\Mantenimiento-aires-acondicionados-main\JCalentadores.App.Dominio\bin\Debug\net6.0\JCalentadores.App.Dominio.deps.json
+C:\C#\Mantenimiento-aires-acondicionados-main\JCalentadores.App.Dominio\bin\Debug\net6.0\JCalentadores.App.Dominio.dll
+C:\C#\Mantenimiento-aires-acondicionados-main\JCalentadores.App.Dominio\bin\Debug\net6.0\JCalentadores.App.Dominio.pdb
+C:\C#\Mantenimiento-aires-acondicionados-main\JCalentadores.App.Dominio\obj\Debug\net6.0\JCalentadores.App.Dominio.csproj.AssemblyReference.cache
+C:\C#\Mantenimiento-aires-acondicionados-main\JCalentadores.App.Dominio\obj\Debug\net6.0\JCalentadores.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\C#\Mantenimiento-aires-acondicionados-main\JCalentadores.App.Dominio\obj\Debug\net6.0\JCalentadores.App.Dominio.AssemblyInfoInputs.cache
+C:\C#\Mantenimiento-aires-acondicionados-main\JCalentadores.App.Dominio\obj\Debug\net6.0\JCalentadores.App.Dominio.AssemblyInfo.cs
+C:\C#\Mantenimiento-aires-acondicionados-main\JCalentadores.App.Dominio\obj\Debug\net6.0\JCalentadores.App.Dominio.csproj.CoreCompileInputs.cache
+C:\C#\Mantenimiento-aires-acondicionados-main\JCalentadores.App.Dominio\obj\Debug\net6.0\JCalentadores.App.Dominio.dll
+C:\C#\Mantenimiento-aires-acondicionados-main\JCalentadores.App.Dominio\obj\Debug\net6.0\refint\JCalentadores.App.Dominio.dll
+C:\C#\Mantenimiento-aires-acondicionados-main\JCalentadores.App.Dominio\obj\Debug\net6.0\JCalentadores.App.Dominio.pdb
+C:\C#\Mantenimiento-aires-acondicionados-main\JCalentadores.App.Dominio\obj\Debug\net6.0\ref\JCalentadores.App.Dominio.dll
 C:\C#\Proyecto\JCalentadores.App\JCalentadores.App\JCalentadores.App.Dominio\bin\Debug\net6.0\JCalentadores.App.Dominio.deps.json
 C:\C#\Proyecto\JCalentadores.App\JCalentadores.App\JCalentadores.App.Dominio\bin\Debug\net6.0\JCalentadores.App.Dominio.dll
 C:\C#\Proyecto\JCalentadores.App\JCalentadores.App\JCalentadores.App.Dominio\bin\Debug\net6.0\JCalentadores.App.Dominio.pdb

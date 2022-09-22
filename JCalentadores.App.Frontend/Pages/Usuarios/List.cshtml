@@ -1,0 +1,70 @@
+﻿@page
+@model JCalentadores.App.Frontend.Pages.ListModel
+@{
+}
+
+<h1>Usuarios</h1>
+
+<table class="table">
+    @foreach (var usuarios in Model.ObUsuarios)
+        {     
+ <tr>
+            <td>@usuarios.nombre</td>
+            <td>@usuarios.apellido</td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-usuariosId="@usuarios.id">
+                    <i class="bi bi-list-columns-reverse"></i> Detalle
+                </a>
+            </td>
+
+            <td>
+                <a class="btn btn-success table-btn" asp-page="./Edit" asp-route-usuariosId="@usuarios.id">
+                    <i class="bi bi-pen"></i> Editar
+                </a>
+            </td>
+
+            <td>
+                <a class="btn btn-danger table-btn" asp-page="./Delete" asp-route-usuariosId="@usuarios.id">
+                    <i class="bi bi-trash-fill"></i> Eliminar
+                </a>
+            </td>
+        </tr>  
+  <tr>
+    <th>Id</th>
+    <th>TipoUsuarios</th>
+    <th>TipoPersona</th>
+    <th>Cedula</th>
+    <th>Nombre</th>
+    <th>Apellido</th>
+    <th>Email</th>
+    <th>Telefono</th>
+    <th>Direccion</th>
+    <th>Nit</th>
+    <th>Admin</th>
+    <th>Confirmado</th>
+    <th>NumeroRegistro</th>
+    <th>Horario</th>
+    <th>MetodoPago</th>
+    <th>Token</th>
+
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+    }
+</table>

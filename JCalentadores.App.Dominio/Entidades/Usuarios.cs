@@ -1,4 +1,6 @@
 using System;
+
+namespace JCalentadores.App.Dominio{
 public class Usuarios
 {
     public int id {get;set;}
@@ -18,4 +20,5 @@ public class Usuarios
     public int metodoPago {get;set;}
     public int tipoPersona {get;set;}
    
+}
 }

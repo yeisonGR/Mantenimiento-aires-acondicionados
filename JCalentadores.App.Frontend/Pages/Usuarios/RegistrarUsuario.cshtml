@@ -1,0 +1,101 @@
+@page
+@model JCalentadores.App.Frontend.Pages.ListModel
+@{
+}
+
+<h1>Usuarios</h1>
+
+<table class="table">
+    @foreach (var usuario in Model.ObUsuarios)
+        { 
+  <tr>
+    <td>Id</td>
+  </tr>
+   <td></td> 
+  <tr>
+    <td>TipoUsuario</td>
+    </tr>   
+<td><form action="/action_page.php">
+  <label for="option"></label>
+  <select id="option" name="option">
+    <option value="Cliente">Cliente</option>
+    <option value="Empresa">Empresa</option>
+    <option value="Tecnico">Tecnico</option>
+  </select>
+</form>
+</td>
+<tr><td>Tipo Persona</td></tr>
+<td><form action="/action_page.php">
+  <label for="option"></label>
+  <select id="option" name="option">
+    <option value="Natural">Natural</option>
+    <option value="Juridico">Juridico</option>
+  </select>
+</form>
+</td>
+
+<tr><td>Cedula</td></tr>
+
+<td>
+<form action="/action_page.php">
+  <label for="fname"></label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+  </form>
+</td>
+
+<tr><td>Nombre</td></tr>
+
+<td>
+<form action="/action_page.php">
+  <label for="fname"></label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+  </form>
+</td>
+
+<tr><td>Apellido</td></tr>
+
+<td>
+<form action="/action_page.php">
+  <label for="fname"></label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+  </form>
+</td>
+
+<tr><td>Email</td></tr>
+
+<td>
+<form action="/action_page.php">
+  <label for="fname"></label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+  </form>
+</td>
+
+<tr><td>Telefono</td></tr>
+
+<td>
+<form action="/action_page.php">
+  <label for="fname"></label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+  </form>
+</td>
+
+<tr><td>Direccion</td></tr>
+
+<td>
+<form action="/action_page.php">
+  <label for="fname"></label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+  </form>
+</td>
+
+<tr><td>Nit</td></tr>
+
+<td>
+<form action="/action_page.php">
+  <label for="fname"></label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+  </form>
+</td>
+
+    }
+</table>

@@ -8,7 +8,7 @@ namespace JCalentadores.App.Persistencia
         public DbSet<Citas> Cita {get;set;}
         public DbSet<CitasServicios> CitaServicio {get;set;}
         public DbSet<Servicios> Servicio {get;set;}
-        public DbSet<Usuarios> Usuario {get;set;}
+        public DbSet<Usuarios> usuarios {get;set;}
         public DbSet<Historial> HistorialCitas {get;set;}
         
         protected override void OnConfiguring (DbContextOptionsBuilder optionsBuilder)
